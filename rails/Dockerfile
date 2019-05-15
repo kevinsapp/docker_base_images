@@ -6,6 +6,7 @@ FROM ruby:2.6.3-stretch
 # Rails requires a JavaScript runtime, so install Node.js too.
 RUN apt-get update \
     && apt-get install -y \
+        postgresql-client \
         build-essential \
         nodejs \
     && rm -rf /var/lib/apt/lists/*
