@@ -10,5 +10,5 @@ RUN apt-get update \
         nodejs \
     && rm -rf /var/lib/apt/lists/*
 
-# Install Rails (not required)
+# Install Rails
 RUN gem install rails -v 5.2.3
